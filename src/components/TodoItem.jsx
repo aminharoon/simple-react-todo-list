@@ -11,10 +11,7 @@ const TodoItem = ({ eachTodo }) => {
     setEditedText,
   } = useTodo();
   return (
-    <div
-      key={eachTodo.id}
-      className="w-full py-2 px-1 bg-slate-700 text-slate-100 rounded flex justify-between "
-    >
+    <div className="w-full py-2 px-1 bg-slate-700 text-slate-100 rounded flex justify-between ">
       <div className="flex gap-2 justify-center items-center">
         <span>
           {" "}
@@ -58,7 +55,7 @@ const TodoItem = ({ eachTodo }) => {
               }}
             >
               {" "}
-              <i class="ri-edit-line"></i>
+              <i className="ri-edit-line"></i>
             </span>
           ) : (
             <span
@@ -67,7 +64,7 @@ const TodoItem = ({ eachTodo }) => {
               }}
             >
               {" "}
-              <i class="ri-save-line"></i>
+              <i className="ri-save-line"></i>
             </span>
           )}
         </span>
@@ -78,7 +75,7 @@ const TodoItem = ({ eachTodo }) => {
           }}
           className="cursor-pointer text-2xl text-red-500"
         >
-          <i class="ri-close-line"></i>
+          <i className="ri-close-line"></i>
         </button>
       </div>
     </div>
